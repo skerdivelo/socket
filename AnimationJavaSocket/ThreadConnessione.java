@@ -40,4 +40,8 @@ class ThreadConnessione implements Runnable{
     public DataInputStream getInput(){
         return input;
     }
+
+    public DataOutputStream getOutput(){
+        return out;
+    }
 }
