@@ -1,3 +1,4 @@
+import java.io.DataInputStream;
 import java.net.ServerSocket;
 
 import javax.swing.JOptionPane;
@@ -34,4 +35,9 @@ class ThreadConnessione implements Runnable{
     }
 
     PanelloAnimazione pan = new PanelloAnimazione(this, this.getSize());
+    this.add(pan);
+
+    public DataInputStream getInput(){
+        return input;
+    }
 }
